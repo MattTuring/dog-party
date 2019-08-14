@@ -3,7 +3,7 @@
   <header>
 
     <link rel="stylesheet" href="style.css">
-
+    <script src="main.js" charset="utf-8"></script>
     <nav>
 
 
@@ -21,9 +21,9 @@
         <div class="nav-right">
 
 
-        <li><a href="#">How To Dog</a></li>
-        <li><a href="#">What Is Dogs</a></li>
-        <li><a href="#">Facts From Dog</a></li>
+        <li onmouseover="tipOne()" onmouseout="noTipOne()"><span id="jsTipOne">Dog Just Is</span><a href="#">How To Dog</a></li>
+        <li onmouseover="tipTwo()" onmouseout="noTipTwo()"><span id="jsTipTwo">Dog Just Is</span><a href="#">What Is Dogs</a></li>
+        <li onmouseover="tipThree()" onmouseout="noTipThree()"><span id="jsTipThree">Dog Just Is</span><a href="#">Facts From Dog</a></li>
 
         </div>
       </ul>
@@ -43,33 +43,44 @@
 
       <p class="text-left white">Name</p>
     </div>
-    <input class="content-center" type="text" name="" value="">
+    <input id="jsDogInput" class="content-center" type="text" name="dogName" value=" ">
     <br>
-    <button class="light-blue content-center" type="button" name="button"> Name This Dog</button>
+    <button onclick="nameDog()" class="light-blue content-center" type="button" name="button"> Name This Dog</button>
 
     </div>
-    <table>
-      <tr>
-        <td class="text-center">How To Dog</td>
-        <td class="text-center">What Is Dogs</td>
-        <td class="text-center">Facts From Dog</td>
-      </tr>
-      <tr>
-        <td><img class="dog" src="images\dog2-sq.jpg" alt="cute bull"></td>
-        <td><img  class="dog" src="images\dog3-sq.jpg" alt="cute black dog"></td>
-        <td><img class="dog" src="images\dog4-sq.jpg" alt="cute unknown dog"></td>
-      </tr>
-      <tr>
-        <td class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
-        <td class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
-        <td class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td>
-      </tr>
-      <tr>
-        <td><button class="dark-blue content-center white" type="button" name="button">How</button></td>
-        <td><button class="dark-blue content-center white" type="button" name="button">What</button></td>
-        <td><button class="dark-blue content-center white" type="button" name="button">Facts</button></td>
-      </tr>
-    </table>
+<div class="text-center">
+<div style="display: inline-block; width: 30%;">
+  <p class="text-center">How To Dog</p>
+  <p class="text-center"><img class="dog body-dog" src="images\dog2-sq.jpg" alt="cute bull"></p>
+  <p class="content" id="text1">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+  <p>
+    <button class="dark-blue content-center white" type="button" name="button" onclick="hideTextOne()">How</button>
+  </p>
+</div>
+<div style="display: inline-block; width: 30%;">
+  <p class="text-center">What Is Dog</p>
+  <p class="text-center"><img class="dog body-dog" src="images\dog3-sq.jpg" alt="cute bull"></p>
+  <p class="content" id="text2">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+  <p>
+    <button class="dark-blue content-center white" type="button" name="button" onclick="hideTextTwo()">What</button>
+  </p>
+</div>
+<div style="display: inline-block; width: 30%;">
+  <p class="text-center">Facts From Dog</p>
+  <p class="text-center"><img class="dog body-dog" src="images\dog4-sq.jpg" alt="cute bull"></p>
+  <p class="content" id="text3">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+  <p>
+    <button class="dark-blue content-center white" type="button" name="button" onclick="hideTextThree()">Facts</button>
+  </p>
+</div>
+</div>
+
   </body>
   <footer class="dark-blue">
 <p class="text-center white text-bottom">Learn About Dogs Online</p>
