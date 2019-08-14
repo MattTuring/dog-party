@@ -62,9 +62,8 @@ h1 {
   margin-left: -50px;
 }
 
-li {
+.inline {
   display: inline;
-
 }
 
 .text-center {
@@ -102,11 +101,13 @@ li {
 
 button,
 input {
-padding-top: 10px;
-padding-bottom: 10px;
-width: 100%;
-max-width: 300px;
-border-radius: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .name {
@@ -161,6 +162,10 @@ a {
 li>img {
   padding: 6px;
 }
+.block {
+  display: inline-block;
+  width: 30%;
+}
 
 @media only screen and (max-width: 455px) {
 
@@ -170,6 +175,11 @@ li>img {
   a {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .block {
+    display: block;
+    width: 100%;
   }
 
 }
@@ -228,4 +238,15 @@ keyframes fadeInOpacity {
 
 .no-how {
   display: none !important;
+}
+
+.float-left {
+  float: left;
+}
+
+form {
+  border: 1px solid #068daa;
+  width: 45%;
+  padding: 20px;
+  border-radius: 3px;
 }
