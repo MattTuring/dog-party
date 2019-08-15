@@ -7,8 +7,9 @@ function nameDog() {
   if (document.getElementById('jsDogInput').value != "") {
     document.getElementById('jsDogInput').value = ""
   }
-  console.log("works")
 }
+
+
 
 function hideTextOne() {
   document.getElementById('text1').classList.toggle('hide')
@@ -59,13 +60,10 @@ function dogInfoText() {
 
   if (dogSelectValue == "how") {
     document.getElementById('text1').innerHTML  = document.getElementById('jsDogTextInput').value
-    console.log("how")
   } else if ( dogSelectValue == "what" ){
     document.getElementById('text2').innerHTML  = document.getElementById('jsDogTextInput').value
-    console.log("what")
   } else if ( dogSelectValue == "fact") {
     document.getElementById('text3').innerHTML  = document.getElementById('jsDogTextInput').value
-    console.log("fact")
   } else {
     console.log("not selected")
   }

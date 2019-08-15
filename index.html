@@ -5,107 +5,86 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js" charset="utf-8"></script>
     <nav>
-
-
-
       <ul class="light-blue top-nav">
-
         <div class="nav-left">
-
-
           <img class="header-img" src="images\dog-icon.svg" alt="dog icon">
-
-
         </div>
-
         <div class="nav-right">
-
-
-        <li class="inline" onmouseover="tipOne()" onmouseout="noTipOne()"><span id="jsTipOne">Dog Just Is</span><a href="#">How To Dog</a></li>
-        <li class="inline" onmouseover="tipTwo()" onmouseout="noTipTwo()"><span id="jsTipTwo">Dog Just Is</span><a href="#">What Is Dogs</a></li>
-        <li class="inline" onmouseover="tipThree()" onmouseout="noTipThree()"><span id="jsTipThree">Dog Just Is</span><a href="#">Facts From Dog</a></li>
-
+          <li class="inline" onmouseover="tipOne()" onmouseout="noTipOne()"><span id="jsTipOne">Dog Just Is</span><a class="bigger" href="#">How To Dog</a></li>
+          <li class="inline" onmouseover="tipTwo()" onmouseout="noTipTwo()"><span id="jsTipTwo">Dog Just Is</span><a class="bigger" href="#">What Is Dogs</a></li>
+          <li class="inline" onmouseover="tipThree()" onmouseout="noTipThree()"><span id="jsTipThree">Dog Just Is</span><a class="bigger" href="#">Facts From Dog</a></li>
         </div>
       </ul>
     </nav>
   </header>
-
   <body>
-    <div class="hero">
-
-
-
-
-
-    <h1 class="text-center white slim">A Site About <span id="dog" class="bold">Some Dogs</span></h1>
-    <img class="dog" src="images\dog1-sq.jpg" alt="">
-    <div class="name content-center">
-
-      <p class="text-left white">Name</p>
-    </div>
-    <input id="jsDogInput" class="content-center" type="text" name="dogName" value=" ">
-    <br>
-    <button onclick="nameDog()" class="light-blue content-center" type="button" name="button"> Name This Dog</button>
-
-    </div>
-<div class="text-center">
-<div class="block">
-  <p class="text-center bold">How To Dog</p>
-  <p class="text-center"><img class="dog body-dog" src="images\dog2-sq.jpg" alt="cute bull"></p>
-  <p class="content" id="text1">
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  </p>
-  <p>
-    <button class="dark-blue content-center white" type="button" name="button" onclick="hideTextOne()">How</button>
-  </p>
-</div>
-<div class="block">
-  <p class="text-center bold">What Is Dog</p>
-  <p class="text-center"><img class="dog body-dog" src="images\dog3-sq.jpg" alt="cute bull"></p>
-  <p class="content" id="text2">
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  </p>
-  <p>
-    <button class="dark-blue content-center white" type="button" name="button" onclick="hideTextTwo()">What</button>
-  </p>
-</div>
-<div class="block">
-  <p class="text-center bold">Facts From Dog</p>
-  <p class="text-center"><img class="dog body-dog" src="images\dog4-sq.jpg" alt="cute bull"></p>
-  <p class="content" id="text3">
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  </p>
-  <p>
-    <button class="dark-blue content-center white" type="button" name="button" onclick="hideTextThree()">Facts</button>
-  </p>
-</div>
-</div>
-
-<div class="content-center">
-
-
-<form class="content-center" action="index.html" method="post">
-  <p>
-    <select class="content-center" id="jsDogInfo">
-    <option value="how">How</option>
-    <option value="what">What</option>
-    <option value="fact">Fact</option>
-  </select>
-  </p>
-  <p>
-    <input id="jsDogTextInput" class="content-center" type="text" name="dogText" value=" ">
-  </p>
-  <button onclick="dogInfoText()" class="light-blue content-center text-center" type="button" name="button"> Give Me Dog Info</button>
-</form>
-</div>
+    <section class="hero">
+      <h1 class="text-center white slim">A Site About <span id="dog" class="bold">Some Dogs</span></h1>
+      <img class="dog" src="images\dog1-sq.jpg" alt="">
+      <div class="name content-center">
+        <p class="text-left white name">Name</p>
+      </div>
+      <input id="jsDogInput" class="content-center" type="text" name="dogName" value=" ">
+      <br>
+      <button onclick="nameDog()" class="light-blue content-center bigger" type="button" name="button"> Name This Dog</button>
+    </section>
+    <main class="text-center">
+      <div class="block">
+        <p class="text-center bold bigger padding-top-bottom-10">How To Dog</p>
+        <p class="text-center"><img class="dog body-dog" src="images\dog2-sq.jpg" alt="cute bull"></p>
+        <p class="content" id="text1">
+          Dat tungg tho pupperino length boy. borkdrive aqua doggo. Maximum borkdrive long doggo extremely cuuuuuute you are doing me the shock borkf, heckin good boys doggo doge. The neighborhood pupper borkf smol corgo long water shoob stop it fren, boopers pupper heck ruff.
+        </p>
+        <p>
+          <button class="dark-blue content-center white" type="button" name="button" onclick="hideTextOne()">How</button>
+        </p>
+      </div>
+      <div class="block">
+        <p class="text-center bold bigger padding-top-bottom-10">What Is Dog</p>
+        <p class="text-center"><img class="dog body-dog" src="images\dog3-sq.jpg" alt="cute bull"></p>
+        <p class="content" id="text2">
+          Long doggo smol borking doggo with a long snoot for pats pupperino h*ck heckin angery woofer shoober aqua doggo heck, doggo aqua doggo most angery pupper I have ever seen heckin angery woofer pupper. ruff adorable doggo very hand that fed shibe. Extremely cuuuuuute corgo waggy wags stop it fren.
+        </p>
+        <p>
+          <button class="dark-blue content-center white" type="button" name="button" onclick="hideTextTwo()">What</button>
+        </p>
+      </div>
+      <div class="block">
+        <p class="text-center bold bigger padding-top-bottom-10">Facts From Dog</p>
+        <p class="text-center"><img class="dog body-dog" src="images\dog4-sq.jpg" alt="cute bull"></p>
+        <p class="content" id="text3">
+          Most angery pupper I have ever seen such treat heck, dat tungg tho. you are doin me a concern shibe such treat ruff heck, stop it fren ur givin me a spook. Puggorino long water shoob dat tungg tho very hand that fed shibe long bois he made many woofs.
+          <br>
+          <br>
+        </p>
+        <p>
+          <button class="dark-blue content-center white" type="button" name="button" onclick="hideTextThree()">Facts</button>
+        </p>
+      </div>
+    </main>
+    <div class="content-center">
+      <form class="content-center" action="index.html" method="post">
+        <p>
+          <select class="content-center" id="jsDogInfo">
+            <option value="how">How</option>
+            <option value="what">What</option>
+            <option value="fact">Fact</option>
+          </select>
+        </p>
+        <p>
+          <input id="jsDogTextInput" class="content-center" type="text" name="dogText" value=" ">
+        </p>
+          <button onclick="dogInfoText()" class="light-blue content-center text-center bigger" type="button" name="button"> Change Dog Info</button>
+        </form>
+      </div>
   </body>
   <footer class="dark-blue">
-<p class="text-center white text-bottom">Learn About Dogs Online</p>
-<ul class="bottom-nav text-center">
-  <li class="inline"><img src="images\twitter.svg" alt="twitter"></li>
-  <li class="inline"><img src="images\instagram.svg" alt="instagram"></li>
-  <li class="inline"><img src="images\facebook.svg" alt="facebook"></li>
-  <li class="inline"><img src="images\linkedin.svg" alt="linkedin"></li>
-</ul>
+    <p class="text-center white text-bottom">Learn About Dogs Online</p>
+    <ul class="bottom-nav text-center">
+      <li class="inline"><img src="images\twitter.svg" alt="twitter"></li>
+      <li class="inline"><img src="images\instagram.svg" alt="instagram"></li>
+      <li class="inline"><img src="images\facebook.svg" alt="facebook"></li>
+      <li class="inline"><img src="images\linkedin.svg" alt="linkedin"></li>
+    </ul>
   </footer>
 </html>
