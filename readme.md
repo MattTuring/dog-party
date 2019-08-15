@@ -1,5 +1,22 @@
 OG Comp
 
+Requirements
+
+0:
+
+Make site matching with picture below. Images provided.
+
+1:
+
+Add some JS functions
+
+2:
+
+Make Responsive NOT using flex, grid, bootstrap, or etc.
+
+3:
+
+More JS functions, Tools tips, and basic animation
 
 ![og](https://github.com/MattTuring/dog-party/blob/master/og.jpg)
 My Site
