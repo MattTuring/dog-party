@@ -3,16 +3,16 @@
   <header>
 
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" charset="utf-8"></script>
+
     <nav>
       <ul class="light-blue top-nav">
         <div class="nav-left">
           <img class="header-img" src="images\dog-icon.svg" alt="dog icon">
         </div>
         <div class="nav-right">
-          <li class="inline" onmouseover="tipOne()" onmouseout="noTipOne()"><span id="jsTipOne">Dog Just Is</span><a href="#">How To Dog</a></li>
-          <li class="inline" onmouseover="tipTwo()" onmouseout="noTipTwo()"><span id="jsTipTwo">Dog Just Is</span><a href="#">What Is Dogs</a></li>
-          <li class="inline" onmouseover="tipThree()" onmouseout="noTipThree()"><span id="jsTipThree">Dog Just Is</span><a href="#">Facts From Dog</a></li>
+          <li id="jsHow" class="inline"><span id="jsTipOne">Dog Just Is</span><a href="#">How To Dog</a></li>
+          <li id="jsWhat" class="inline"><span id="jsTipTwo">Dog Just Is</span><a href="#">What Is Dogs</a></li>
+          <li id="jsFact" class="inline"><span id="jsTipThree">Dog Just Is</span><a href="#">Facts From Dog</a></li>
         </div>
       </ul>
     </nav>
@@ -26,7 +26,7 @@
       </div>
       <input id="jsDogInput" class="content-center" type="text" name="dogName" value=" ">
       <br>
-      <button onclick="nameDog()" class="light-blue content-center bigger" type="button" name="button"> Name This Dog</button>
+      <button id="jsNameDog" class="light-blue content-center bigger" type="button" name="button"> Name This Dog</button>
     </section>
     <main class="text-center">
       <div class="block">
@@ -36,7 +36,7 @@
           Dat tungg tho pupperino length boy. borkdrive aqua doggo. Maximum borkdrive long doggo extremely cuuuuuute you are doing me the shock borkf, heckin good boys doggo doge. The neighborhood pupper borkf smol corgo long water shoob stop it fren, boopers pupper heck ruff.
         </p>
         <p>
-          <button class="dark-blue content-center white" type="button" name="button" onclick="hideTextOne()">How</button>
+          <button id="jsHideTextOne" class="dark-blue content-center white" type="button" name="button" >How</button>
         </p>
       </div>
       <div class="block">
@@ -46,7 +46,7 @@
           Long doggo smol borking doggo with a long snoot for pats pupperino h*ck heckin angery woofer shoober aqua doggo heck, doggo aqua doggo most angery pupper I have ever seen heckin angery woofer pupper. ruff adorable doggo very hand that fed shibe. Extremely cuuuuuute corgo waggy wags stop it fren.
         </p>
         <p>
-          <button class="dark-blue content-center white" type="button" name="button" onclick="hideTextTwo()">What</button>
+          <button id="jsHideTextTwo" class="dark-blue content-center white" type="button" name="button">What</button>
         </p>
       </div>
       <div class="block">
@@ -58,7 +58,7 @@
           <br>
         </p>
         <p>
-          <button class="dark-blue content-center white" type="button" name="button" onclick="hideTextThree()">Facts</button>
+          <button id="jsHideTextThree" class="dark-blue content-center white" type="button" name="button">Facts</button>
         </p>
       </div>
     </main>
@@ -74,7 +74,7 @@
         <p>
           <input id="jsDogTextInput" class="content-center" type="text" name="dogText" value=" ">
         </p>
-          <button onclick="dogInfoText()" class="light-blue content-center text-center bigger" type="button" name="button"> Change Dog Info</button>
+          <button id="jsDogInfoButton" class="light-blue content-center text-center bigger" type="button" name="button"> Change Dog Info</button>
         </form>
       </div>
   </body>
@@ -87,4 +87,5 @@
       <li class="inline"><img src="images\linkedin.svg" alt="linkedin"></li>
     </ul>
   </footer>
+    <script src="main.js" charset="utf-8"></script>
 </html>
